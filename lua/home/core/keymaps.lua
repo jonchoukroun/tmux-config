@@ -1,9 +1,10 @@
 vim.g.mapleader = " "
+vim.g.localmapleader = " "
 
 vim.keymap.set("n", "<leader>rw", vim.cmd.Ex, { desc = "Return to NetRw" })
 
 -- Clear search highlighting
-vim.keymap.set("n", "<leader>/", "<cmd>noh<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<esc>", "<cmd>noh<CR>", { noremap = true, silent = true })
 
 vim.keymap.set("n", "<leader><Tab>", "<C-^>", { desc = "Alt File" })
 
